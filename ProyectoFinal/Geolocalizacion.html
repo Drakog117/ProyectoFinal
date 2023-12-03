@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("Header.html"); 
+        });
+    </script>
+</head>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/Geo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b5b9b93f4.js" crossorigin="anonymous"></script>
+    <title>Pagina Inicio</title>
+   
+</head>
+
+<div id="header"></div>
+
+<body>
+   
+
+    <div id="map", class="map">
+
+    </div>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBMuXv2Lrnm911rAhTGJzH1og7udgw4Ok&callback=initMap">
+</script>
+
+
+
+
+<script>
+    const coord ={lat: 19.432947, lng:-99.133349}
+    const mapDiv = document.getElementById("map");
+    let map
+    let marker
+    function initMap() {
+        map = new google.maps.Map(mapDiv, {
+            center: coord,
+            zoom: 9,
+        });
+    
+    marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    })
+}
+</script>
+
+</body>
+</html>

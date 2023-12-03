@@ -97,3 +97,16 @@ body{
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width: 427px){
+   
+    
+    .hire-button a {
+        
+        margin-left: 19%;
+        
+        
+    }
+    
+
+}

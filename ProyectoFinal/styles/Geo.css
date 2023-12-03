@@ -1,0 +1,21 @@
+body {
+    font-family: 'Consolas', monospace;
+    color: #ccc;
+    background-color: #0E1419;
+}
+
+.map{
+    margin-top: 150px;
+    margin-left: 50%;
+    width: 400px;
+    height: 300px;
+    border:2px red solid;
+}
+
+
+@media screen and (max-width: 427px){
+    .map{
+        margin-left: 0%;
+        margin-right: 50%;
+    }
+}
